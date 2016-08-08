@@ -23,5 +23,5 @@ Vagrant.configure("2") do |config|
 
   # Enable provisioning with a shell script. 
   config.vm.provision :"shell", privileged: false, :path => "bootstrap.sh", run: "always"
-  config.vm.provision "shell", privileged: false, inline: "echo Hello, Motivians", run: "always"
+  config.vm.provision "shell", privileged: false, inline: "echo Use $vagrant ssh to connect to your new machine.", run: "always"
 end
