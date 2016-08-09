@@ -7,8 +7,9 @@ if [ ! -f glassfish/bin/asadmin ]; then
     echo "--------------------------------"
 
     #jdk5
-    wget -nc "https://www.dropbox.com/s/rvhj797qe9uvetv/jdk-1_5_0_22-linux-amd64.bin?dl=0" \
-    -O jdk-1_5_0_22-linux-amd64.bin
+    # wget -nc "https://www.dropbox.com/s/rvhj797qe9uvetv/jdk-1_5_0_22-linux-amd64.bin?dl=0" \
+    # -O jdk-1_5_0_22-linux-amd64.bin
+    wget -nc "https://dl.dropboxusercontent.com/u/94173687/jdk-1_5_0_22-linux-amd64.bin"
     chmod +x jdk-1_5_0_22-linux-amd64.bin
     yes | sh jdk-1_5_0_22-linux-amd64.bin
     rm -f jdk-1_5_0_22-linux-amd64.bin
